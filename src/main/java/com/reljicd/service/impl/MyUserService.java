@@ -13,6 +13,6 @@ public class MyUserService {
 
     public User saveUser(User user) {
         // Encode plaintext password
-        return userRepository.saveAndFlush(user);
+        return userRepository.save(user);
     }
 }
