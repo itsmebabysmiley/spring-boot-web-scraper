@@ -12,6 +12,10 @@ Users can add web links to their profile and tag them. Links are also suggested 
 
 ## Configuration
 
+### Java
+
+- java version 11
+
 ### Configuration Files
 
 Folder **src/resources/** contains config files for **web-scraper** Spring Boot application.
