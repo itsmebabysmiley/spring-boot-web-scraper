@@ -13,7 +13,6 @@ import java.util.Optional;
 
 @Service
 public class UserServiceImp implements UserService {
-
     private final UserRepository userRepository;
     private final RoleRepository roleRepository;
     private final PasswordEncoder passwordEncoder;
@@ -44,6 +43,7 @@ public class UserServiceImp implements UserService {
         user.setActive(1);
         // Set Role to ROLE_USER
         user.setRoles(Collections.singletonList(roleRepository.findByRole(USER_ROLE)));
+        System.out.println(user.toString());
         return userRepository.saveAndFlush(user);
     }
 }

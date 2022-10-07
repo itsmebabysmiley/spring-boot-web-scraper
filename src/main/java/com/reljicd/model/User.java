@@ -122,4 +122,19 @@ public class User {
     public void setLinks(Collection<Link> links) {
         this.links = links;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", username='" + username + '\'' +
+                ", name='" + name + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", active=" + active +
+                ", roles=" + roles +
+                ", links=" + links +
+                '}';
+    }
 }
